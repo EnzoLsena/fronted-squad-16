@@ -18,7 +18,7 @@ export const themes = {
       logoDark: import.meta.env.VITE_LOGO_PATH_DARK,
       iconPage: import.meta.env.VITE_ICON_PAGE,
       loginImage: import.meta.env.VITE_LOGIN_IMAGE,
-      customerName: import.meta.env.VITE_CUSTOMER_NAME || "del.tech",
+      customerName: import.meta.env.VITE_CUSTOMER_NAME || "sistema gestão",
     },
   },
   dark: {
