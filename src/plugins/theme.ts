@@ -3,7 +3,7 @@ export const themes = {
     dark: false,
     colors: {
       customer: import.meta.env.VITE_CUSTOMER || "#1f3799",
-      primary: import.meta.env.VITE_PRIMARY || "#000000",
+      primary: import.meta.env.VITE_PRIMARY || "#2E8DD6",
       secondary: import.meta.env.VITE_SECONDARY || "#9e9da6",
       success: import.meta.env.VITE_SUCCESS || "#22C55E",
       info: import.meta.env.VITE_INFO || "#03C3EC",
