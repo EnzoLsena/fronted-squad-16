@@ -13,14 +13,21 @@ import { computed } from "vue";
 
 const route = useRoute();
 
-const isLoginPage = computed(() => route.path === "/login");
+const layoutlessRouteNames = [
+  "Login",
+  "Register",
+  "NotAuthorized",
+  "RequestedCreateAccount"
+];
+
+const isLayoutlessPage = computed(() => layoutlessRouteNames.includes((route.name as string) || ""));
 
 const isActiveRoute = (routePath: string) => {
   return route.path === routePath;
 };
 </script>
 <template>
-  <div v-if="isLoginPage" class="h-screen">
+  <div v-if="isLayoutlessPage" class="h-screen">
     <router-view />
   </div>
   <VLayout v-else class="rounded-md border">

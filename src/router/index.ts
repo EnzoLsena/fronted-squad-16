@@ -9,11 +9,6 @@ const router = createRouter({
       component: () => import("@/views/home/Home.vue"),
     },
     {
-      path: "/login",
-      name: "Login",
-      component: () => import("@/views/login/Login.vue"),
-    },
-    {
       path: "/combo",
       name: "Combo",
       component: () => import("@/views/combo/Combo.vue"),
@@ -32,6 +27,26 @@ const router = createRouter({
       path: "/settings",
       name: "Settings",
       component: () => import("@/views/settings/Settings.vue"),
+    },
+    {
+      path: "/not-authorized",
+      name: "NotAuthorized",
+      component: () => import("@/views/defaults/NotAuthorized401.vue"),
+    },
+    {
+      path: "/login",
+      name: "Login",
+      component: () => import("@/views/login/Login.vue"),
+    },
+    {
+      path: "/register",
+      name: "Register",
+      component: () => import("@/views/register/Register.vue"),
+    },
+    {
+      path: "/requested-account",
+      name: "RequestedCreateAccount",
+      component: () => import("@/views/defaults/RequestedCreateAccount.vue"),
     },
   ],
 });
