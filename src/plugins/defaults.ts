@@ -4,7 +4,8 @@ export default {
     variant: "outlined",
   },
   VBtn: {
-    class: "rounded-lg",
+    class: "text-none cursor-pointer opacity-100",
+    height: "40",
   },
 
   VChip: {

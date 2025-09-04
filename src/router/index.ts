@@ -6,23 +6,32 @@ const router = createRouter({
     {
       path: "/",
       name: "Home",
-      component: () => import("@/views/Home.vue"),
+      component: () => import("@/views/home/Home.vue"),
     },
     {
-      path: "/dashboard",
-      name: "Dashboard",
-      // Lazy-loading para melhor performance
-      component: () => import("@/views/Dashboard.vue"),
+      path: "/login",
+      name: "Login",
+      component: () => import("@/views/login/Login.vue"),
     },
     {
-      path: "/users",
-      name: "Users",
-      component: () => import("@/views/Users.vue"),
+      path: "/combo",
+      name: "Combo",
+      component: () => import("@/views/combo/Combo.vue"),
+    },
+    {
+      path: "/audit",
+      name: "Audit",
+      component: () => import("@/views/audit/Audit.vue"),
+    },
+    {
+      path: "/institution",
+      name: "Institution",
+      component: () => import("@/views/institution/Institution.vue"),
     },
     {
       path: "/settings",
       name: "Settings",
-      component: () => import("@/views/Settings.vue"),
+      component: () => import("@/views/settings/Settings.vue"),
     },
   ],
 });

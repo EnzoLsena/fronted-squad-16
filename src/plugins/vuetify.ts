@@ -18,7 +18,7 @@ export default createVuetify({
   directives,
   defaults,
   icons: {
-    defaultSet: "mdi", // This is already the default value - only for display purposes
+    defaultSet: "mdi", 
   },
   theme: {
     defaultTheme: "light",
