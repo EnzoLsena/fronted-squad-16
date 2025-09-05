@@ -48,7 +48,7 @@ export default {
     variant: "outlined",
   },
   VDateInput: {
-    placeholder: "dd/mm/yyyy",
+    placeholder: "dd/mm/aaaa",
     variant: "outlined",
     prependIcon: "",
     density: "compact",

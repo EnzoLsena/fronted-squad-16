@@ -1,6 +1,6 @@
 import { createVuetify } from "vuetify";
-import { themes } from "@/plugins/theme";
-import defaults from "@/plugins/defaults.ts";
+import { themes } from "@/vuetify/theme";
+import defaults from "@/vuetify/defaults";
 import "vuetify/styles";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
@@ -18,7 +18,7 @@ export default createVuetify({
   directives,
   defaults,
   icons: {
-    defaultSet: "mdi", 
+    defaultSet: "mdi",
   },
   theme: {
     defaultTheme: "light",
